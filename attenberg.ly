@@ -129,8 +129,18 @@ as g) as\>
 
 (as2.)\>
 
-\!
 
+
+
+
+
+\relative{
+\tuplet 3/1 9 { es'16-.\!\ppp[ bes-. es-.]   c-.[ f-. c-.]  es-.[ bes-. es-.]}
+
+\tuplet 3/1 9 { c16-.[ f-. c-.]  es16-.[ bes-. es-.]   c-.[ f-. c-.]}
+
+\tuplet 3/1 9 { es16-.[ bes-. es-.]   c-.[ f-. c-.]  es-.[ bes-. es-.]}
+}
 
 
 }
