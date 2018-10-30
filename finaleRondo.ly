@@ -15,7 +15,7 @@
   \clef alto
 
 \relative{
-as8->\ff\mark "Allegro molto" g16( es) des'8-> c16( as)
+as8->\ff\mark "Allegro molto, 144" g16( es) des'8-> c16( as)
 
 e'8-> es16( c) as'8 g16( e)
 
@@ -183,6 +183,159 @@ R2*9\bar "||"
 \key c \major
 
 R2*4^\markup { \italic con sord. }
+
+<<
+
+{d8\upbow-. d'16\downbow-.( b-.) d8-.\upbow d'16\downbow-.( b-.)
+
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+d8-. d'16-.( b-.) d8-. d'16-.( b-.)
+
+}
+
+{b2 b a a b b a a b b a a b b a a}
+
+>>
+
+\relative{
+<gis d'>2:32^\markup { \italic unis. }
+
+<gis d'>:
+
+<a d>:
+
+<a d>:
+
+<bes d>:
+
+<bes d>:
+
+<a d>:
+
+<a d>:
+
+<bes d>:
+
+<bes d>:
+
+<a d>:
+
+<a d>:
+
+<bes d>:
+}
+
+<d d'>4: <e d'>4:
+
+<f f'>4: <fis fis'>4:
+
+<fis fis'>2:
+
+<f f'>2:
+
+<f f'>2:
+
+e8\upbow\mf^\markup { \italic salt. } gis'16\downbow-.( d'-.) e8 gis'16-.( d'-.)
+
+e8\upbow\< gis'16\downbow-.( d'-.) e8 gis'16-.( d'-.)\!
+
+f8 a'16-.( d'-.) f8 a'16-.( d'-.)
+
+f8\> a'16-.( d'-.) f8 a'16-.( d'-.)\!
+
+e8 bes'16-.( d'-.) e8 bes'16-.\<( d'-.)
+
+e8 bes'16-.( d'-.) e8 bes'16-.( d'-.)\!
+
+f8 a'16-.( d'-.) f8 a'16-.\>( d'-.)
+
+f8 a'16-.( d'-.) f8 a'16-.( d'-.)\!
+
+g8 bes'16-.\<( d'-.) g8 bes'16-.( d'-.)
+
+g8^\markup { \italic expansivo } bes'16-.( d'-.) g8 bes'16-.( d'-.)\!
+
+f8 a'16-.\>( d'-.) f8 a'16-.( d'-.)
+
+f8 a'16-.( d'-.) f8 a'16-.( d'-.)
+
+g8 bes'16-.\!( d'-.) g8 bes'16-.\<( d'-.)
+
+a8 a'16-.( c'-.) a8 a'16-.( c'-.)\!
+
+a8\> a'16-.( c'-.) a8 a'16-.( c'-.)\!
+
+d8 c'16-.( a-.) d8 c'16-.( a-.)
+
+d8 c'16-.( a-.) d8 c'16-.( a-.)
+
+d2\pp ^"senco sord."\startTrillSpan
+
+d-"2" d-"3"
+
+d-"4" d-"5" d-"6" d-"7" d-"8" d-"9" d-"10" d-"11" d-"12" d-"13" d-"14"
+d-"15" d-"16" d-"17" d-"18" d-"19" d-"20" d-"21" d-"22" d-"23" d-"24" d-"25"
+
+d-"26"\>\stopTrillSpan
+
+\relative{
+b8.\!^\markup { \italic a tempo 144 }\pp a16-"tutti senza sord."( g a b c
+
+d8) c16( b c8 b)
+
+
+b8. a16( g a b c
+
+d8) c16( b d,4)
+
+
+b'8. a16( g a b c
+
+d8) c16( b c8 b)
+
+b8. a16( g a b c
+
+d8) c16( b d,4)
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
