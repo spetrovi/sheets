@@ -324,7 +324,126 @@ d8) c16( b c8 b)
 b8. a16( g a b c
 
 d8) c16( b d,4)
+
+\key g \major
+
+b'8 b16( a fis8) fis16( g
+
+e8) e16( dis e fis g a 
+
+b8) b16( a fis8) fis16( g
+
+e4) e'
+
+b8 b16( a fis8) fis16( g 
+
+e8) e16( dis e fis g a
+
+b8) b16( a fis8) fis16( g 
+
+e4) e'
+
+g\ff^\markup { \italic pizz. } d
+
+c g
+
+f c
+
+b'8 <a' b> <a b> <a b>
+
+c4 g
+
+fis8 fis' fis fis
+
+c4 g
+
+fis8 fis' fis fis
+
+fis fis, fis fis,
+
+fis' fis, fis4
+
+R2*2
+
+fis4^\markup { \italic allarg.   poco meno mosso } r
+
+R2*8
+
+\time 1/4
+
+b8.:16\ff ais8.:\tempo 4 = 112 a8.: gis8.:
+
+g8.: gis8.: b8.: gis8.:
+
+b8.: ais8.:\> a8.: gis8.:
+
+g8.: gis8.: a8.: ais8.:\!
+
+b8.: ais8.: a8.: gis8.:
+
+\time 2/4
+
+g8 r8 r4
+
+R2*7
+
+dis8.\fp^\markup { \italic a tempo }  cis16 c c dis e
+
+fis8\tempo 4 = 144 e16( cis) e8 dis
+
+dis8. cis16 c cis dis e
+
+fis g fis e dis e fis g 
+
+a8. g16\fp fis g a b
+
+c8 b16( g) b8 a
+
+a16\< b a g fis g a b\!
+
+c d c b a b c d
+
+e8 r r e^\markup { \italic pizz. }
+
+r8 d e4
 }
+r8 a\< r e'\!
+
+r d' e'4
+
+r8 a r e'
+
+r d' e'4
+
+r8 a r e'
+
+r d' e'4
+
+r8 a r e'
+
+r d' e'4
+
+es'\f d'
+
+des' c'
+
+b c'
+
+cis' d'
+
+es' d'
+
+des' c'
+
+b' c'
+
+cis' d'
+
+dis'8.\ff^\markup { \italic arco } cis'16( b cis' dis' e') 
+
+
+ 
+
 
 
 
