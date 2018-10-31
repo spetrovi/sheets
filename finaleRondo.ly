@@ -15,9 +15,9 @@
   \clef alto
 
 \relative{
-as8->\ff\mark "Allegro molto, 144" g16( es) des'8-> c16( as)
+as8->\ff\mark "Allegro molto" g16( es) des'8-> c16( as)
 
-e'8-> es16( c) as'8 g16( e)
+e'8->\tempo 4 = 144 es16( c) as'8 g16( e)
 
 des8-> c16( as) e'8-> es16( c)
 
@@ -113,7 +113,7 @@ r2\mark "allarg."
 \relative{
 <a c>8\fff c g' g
 
-f-"poco meno musso 114" f <f, g'>4
+f-"poco meno musso"\tempo 4 = 114 f <f, g'>4
 
 <a c>8c g' g
 
@@ -307,9 +307,9 @@ d-"15" d-"16" d-"17" d-"18" d-"19" d-"20" d-"21" d-"22" d-"23" d-"24" d-"25"
 d-"26"\>\stopTrillSpan
 
 \relative{
-b8.\!^\markup { \italic a tempo 144 }\pp a16-"tutti senza sord."( g a b c
+b8.\!\pp\tempo 4 = 144 a16-"tutti senza sord."( g a b c
 
-d8) c16( b c8 b)
+d8)^\markup { \italic a tempo } c16( b c8 b)
 
 
 b8. a16( g a b c
