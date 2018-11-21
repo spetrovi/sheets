@@ -89,9 +89,9 @@ f c
 
 bes f
 
-e8 e'' e4^"kokotina tuto" 
+e8 e'' e e 
 
-f c
+f4  c
 
 a8 <g f'> <g f'> <g f'> 
 
@@ -323,7 +323,7 @@ d8) c16( b c8 b)
 
 b8. a16( g a b c
 
-d8) c16( b d,4)
+d8) c16( b d,4) \bar "||"
 
 \key g \major
 
@@ -369,21 +369,17 @@ fis4^\markup { \italic allarg.   poco meno mosso } r
 
 R2*8
 
-\time 1/4
+b8:16\ff ais8:\tempo 4 = 112 a8: gis8:
 
-b8.:16\ff ais8.:\tempo 4 = 112 a8.: gis8.:
+g8: gis8: a8: ais8:
 
-g8.: gis8.: b8.: gis8.:
+b8: ais8:\> a8: gis8:
 
-b8.: ais8.:\> a8.: gis8.:
+g8: gis8:^"dimin. - - - - " a8: ais8:\!
 
-g8.: gis8.: a8.: ais8.:\!
+b8: ais8: a8: gis8:
 
-b8.: ais8.: a8.: gis8.:
-
-\time 2/4
-
-g8 r8 r4
+g8: r8 r4
 
 R2*7
 
