@@ -437,14 +437,89 @@ cis' d'
 
 dis'8.\ff^\markup { \italic arco } cis'16( b cis' dis' e') 
 
+fis'8 e'16( cis') e'8 dis'
 
- 
+dis'8. cis'16( b cis' dis' e')
 
+fis'8 e'16 cis' fis4
 
+dis'8. cis'16( b cis' dis' e')
 
+fis'8 e'16( cis') e'8 dis'
 
+dis'8. cis'16( b cis' dis' e')
 
+fis'8 e'16 cis' fis4
 
+fis8. e16 d e fis g
+
+a8 g16\upbow e\upbow g8 fis
+
+fis16 g fis e d e fis g
+
+a b a g fis g a b
+
+a8. g16 fis g a b
+
+c'8 b16\upbow( g) b8 a
+
+a16 b a g fis g a b
+
+c' d' c' b a b c' d'
+
+g a g fis e fis g a
+
+b c' b a g a b c'
+
+\relative{
+d' e d c b c d e
+
+fis g fis e d e fis g
+
+a b a g fis g a b
+
+c d c b a b^"1-1" c d 
+
+e fis e d c d e^"1-1" fis
+
+g a g fis e fis g a
+
+g a g fis e fis g a
+}
+
+\relative{
+b'8.^"molto string." a16 g a b c
+
+d8 c16( a) c8 b
+
+b16 c b a g a b c
+
+d8 c16 a d,4
+
+b'8. a16 g a b c
+
+d8 c16( a) c8 b
+
+b8. a16 g a b c
+
+d8 c16 a d,4
+}
+
+d'8^"Piú string." c'16( a d4)
+
+d'8 c'16( a d4)
+
+e'8 d'16( b e4)
+
+e'8 d'16( b e4)
+
+fis'8 e'16( c' fis4)
+
+fis'8 e'16( c' fis4)
+
+fis'8 e'16( c' fis4)
+
+fis'8 e'16( c' fis4)
 
 
 
