@@ -113,7 +113,7 @@ r2\mark "allarg."
 \relative{
 <a c>8\fff c g' g
 
-f-"poco meno musso"\tempo 4 = 114 f <f, g'>4
+f-"poco meno mosso"\tempo 4 = 114 f <f, g'>4
 
 <a c>8c g' g
 
@@ -369,6 +369,8 @@ fis4^\markup { \italic allarg.   poco meno mosso } r
 
 R2*8
 
+\pageBreak
+
 b8:16\ff ais8:\tempo 4 = 112 a8: gis8:
 
 g8: gis8: a8: ais8:
@@ -521,10 +523,72 @@ fis'8 e'16( c' fis4)
 
 fis'8 e'16( c' fis4)
 
+\relative{
+fis'2^"1"\startTrillSpan
+
+fis^"2"
+
+fis^"3"\fff^"Doppio movimento"
+
+fis^"4"
+
+fis^"5"-"dim. subito"
+
+fis^"6"
+
+fis^"7"
+
+fis^"8"
+
+fis^"9"
+
+fis^"10"\>
+
+fis^"11"
+
+fis^"12"\!\pp\stopTrillSpan
+}
+
+R3
+
+gis4^\markup { \italic pizz. } r
+
+a r
+
+R2
+
+fis4 r
+
+R2
+
+d4 r
+
+R2
+
+r4^\markup { \italic clarinet solo } e'8( fis'
+
+g'4) r
+
+r e8( fis
+
+g4) r
 
 
+R3
 
+<fis' fis'' >2\fff^\markup { \italic arco }
 
+<d' d''>4. r8
+
+R2
+
+<g g' b'>4 r
+
+R2
+
+g2\upbow\<
+
+<g d' b'>8\! r8 r4-"Fine."\bar "|."
 
 
 
