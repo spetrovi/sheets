@@ -307,23 +307,21 @@ d-"15" d-"16" d-"17" d-"18" d-"19" d-"20" d-"21" d-"22" d-"23" d-"24" d-"25"
 d-"26"\>\stopTrillSpan
 
 \relative{
-b8.\!\pp\tempo 4 = 144 a16-"tutti senza sord."( g a b c
+b8.\!\pp\tempo 4 = 144 a16-"tutti senza sord."( g a b c)
 
-d8)^\markup { \italic a tempo } c16( b c8 b)
+d8^\markup { \italic a tempo } c16( b) c8 b
 
+b8. a16( g a b c)
 
-b8. a16( g a b c
+d8\downbow c16(\downbow b) d,4
 
-d8) c16( b d,4)
+b'8.\downbow a16( g a b c)
 
+d8 c16( b) c8 b
 
-b'8. a16( g a b c
+b8. a16( g a b c)
 
-d8) c16( b c8 b)
-
-b8. a16( g a b c
-
-d8) c16( b d,4) \bar "||"
+d8\downbow c16\downbow( b) d,4 \bar "||"
 
 \key g \major
 
