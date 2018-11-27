@@ -313,7 +313,7 @@ d8^\markup { \italic a tempo } c16( b) c8 b
 
 b8. a16( g a b c)
 
-d8\downbow c16(\downbow b) d,4
+d8\downbow c16( b) d,4
 
 b'8.\downbow a16( g a b c)
 
@@ -321,7 +321,7 @@ d8 c16( b) c8 b
 
 b8. a16( g a b c)
 
-d8\downbow c16\downbow( b) d,4 \bar "||"
+d8\downbow c16( b) d,4 \bar "||"
 
 \key g \major
 
@@ -480,7 +480,7 @@ a b a g fis g a b
 
 c d c b a b^"1-1" c d 
 
-e fis e d c d e^"1-1" fis
+e fis e d c d^"2-1" e fis
 
 g a g fis e fis g a
 
