@@ -391,7 +391,7 @@ dis8. cis16 c cis dis e
 
 fis g fis e dis e fis g 
 
-a8. g16\fp fis g a b
+a8.\fp g16 fis g a b
 
 c8 b16( g) b8 a
 
