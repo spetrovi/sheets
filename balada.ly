@@ -60,12 +60,13 @@ e e
 a:m a:m
 }
 
+
 sunko= {
   \clef violin
   \key d \major
   \time 2/4
-\relative{
-d''8 fis4 fis8 | g fis e4
+\relative d''{
+d8 fis4 fis8 | g fis e4
 | e8 e4 d8| g fis4. | e2|
 e8 e4 d8 |  e d e4 | 
 a8 a4 g8 |fis4 e | d2 
@@ -316,7 +317,7 @@ sunkoSlova = \lyricmode {ﾄ経 sun -- _ ko | u -- kﾃ｡ -- ﾅｾe, _ | me -- sﾃ｡ _ -- ﾄ
 }
 \score {
   <<
-    \new Staff \sunko
+    \new Staff \transpose d g, \sunko
 
        \new Lyrics {
       \sunkoSlova
@@ -331,13 +332,13 @@ sunkoSlova = \lyricmode {ﾄ経 sun -- _ ko | u -- kﾃ｡ -- ﾅｾe, _ | me -- sﾃ｡ _ -- ﾄ
 }
 \score {
   <<
-    \new Staff \sunko
+    \new Staff \transpose d g, \sunko
 
     \new ChordNames {
       \set chordChanges = ##t
-      \sunkoKch
+       \transpose d g, \sunkoKch
     }
-    \new Staff \sunkoK
+    \new Staff \transpose d g, \sunkoK
 
   >>
   \layout{ }
@@ -365,13 +366,13 @@ sunkoSlova = \lyricmode {ﾄ経 sun -- _ ko | u -- kﾃ｡ -- ﾅｾe, _ | me -- sﾃ｡ _ -- ﾄ
 }
 \score {
   <<
-    \new Staff \kedma
+    \new Staff \transpose d g, \kedma
 
     \new ChordNames {
       \set chordChanges = ##t
-      \kedmaKch
+       \transpose d g, \kedmaKch
     }
-    \new Staff \kedmaK
+    \new Staff \transpose d g,  \kedmaK
 
   >>
   \layout{ }
@@ -383,13 +384,13 @@ sunkoSlova = \lyricmode {ﾄ経 sun -- _ ko | u -- kﾃ｡ -- ﾅｾe, _ | me -- sﾃ｡ _ -- ﾄ
 }
 \score {
   <<
-    \new Staff \zlodzeje
+    \new Staff \transpose d g, \zlodzeje
 
     \new ChordNames {
       \set chordChanges = ##t
-      \zlodzejeKch
+     \transpose d g,  \zlodzejeKch
     }
-    \new Staff \zlodzejeK
+    \new Staff \transpose d g, \zlodzejeK
 
   >>
   \layout{ }
@@ -401,13 +402,13 @@ sunkoSlova = \lyricmode {ﾄ経 sun -- _ ko | u -- kﾃ｡ -- ﾅｾe, _ | me -- sﾃ｡ _ -- ﾄ
 }
 \score {
   <<
-    \new Staff \zbojnici
+    \new Staff \transpose d g, \zbojnici
 
     \new ChordNames {
       \set chordChanges = ##t
-      \zbojniciKch
+      \transpose d g, \zbojniciKch
     }
-    \new Staff \zbojniciK
+    \new Staff \transpose d g, \zbojniciK
 
   >>
   \layout{ }
@@ -441,12 +442,12 @@ sunkoSlova = \lyricmode {ﾄ経 sun -- _ ko | u -- kﾃ｡ -- ﾅｾe, _ | me -- sﾃ｡ _ -- ﾄ
 }
 \score {
   <<
-    \new Staff \kebych
+    \new Staff \transpose d g, \kebych
     \new ChordNames {
       \set chordChanges = ##t
-      \kebychKch
+       \transpose d g, \kebychKch
     }
-    \new Staff \kebychK
+    \new Staff \transpose d g, \kebychK
 
 
 
@@ -455,7 +456,7 @@ sunkoSlova = \lyricmode {ﾄ経 sun -- _ ko | u -- kﾃ｡ -- ﾅｾe, _ | me -- sﾃ｡ _ -- ﾄ
 }
 
 \markup {
-  Kebych ja vedev A dur 1x + dohra
+  Kebych ja vedev D dur 1x + dohra
 }
 \score {
   <<
