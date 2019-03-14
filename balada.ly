@@ -14,7 +14,7 @@ kochanovce= {
 \relative{
 e'8 a d c | b8 a as4 | a2 |
 
-\tuplet 3/2 {c8 d e} e4 | \tuplet 3/2 {e8 d f} e4 | \tuplet 3/2 {d8 c d} c4 | \tuplet 3/2 {b8 a as} a4|
+c8 d e e8\fermata | e8 d f e\fermata | d8 c d c\fermata | b8 a as a\fermata|
 
 e8 a d c | b8 a as4 | a2 |
 
