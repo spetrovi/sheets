@@ -12,11 +12,11 @@ kochanovce= {
   \key a \minor
   \time 2/4
 \relative{
-e'8 a d c | b8 a as4 | a2 |
+e'8 a d c | b8 a gis4 | a2 |
 
-c8 d e e8\fermata | e8 d f e\fermata | d8 c d c\fermata | b8 a as a\fermata|
+c8 d e e8\fermata | e8 d f e\fermata | d8 c d c\fermata | b8 a gis a\fermata|
 
-e8 a d c | b8 a as4 | a2 |
+e8 a d c | b8 a gis4 | a2 |
 
 }
 }
