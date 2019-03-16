@@ -67,19 +67,21 @@ zelienajK = {
 
 zelienajKch = \chordmode {
 d:m d:m d:m d:m
-g:m g:m a:m a:m
+a a a:7 a:7
+d:m d:m d:m d:m
 d:m d:m d:m d:m
 
-d:m d:m g:m g:m 
+
+ 
 c c c c 
 f f f f 
 
-d:m d:m g:m g:m
+d:m d:m d:m d:m
 c c c c 
-f f a a
+f f a:7 a:7
 
-d:m d:m g:m g:m
-a a a a 
+d:m d:m d:m d:m
+g:m g:m a:7 a:7 
 d:m d:m d:m d:m
 }
 
@@ -94,7 +96,7 @@ zelienaj_sa_slovaC = \lyricmode { Čo bych | ta ja | z_voj -- ny | vy mié | ň�
 
 naco_dole= {
   \clef violin
-  \key d \minor
+  \key a \minor
   \time 2/4
   
 
@@ -158,18 +160,22 @@ nacoK = {
 }
 
 nacoKch = \chordmode {
-a:m a:m g:m g:m
-c c g g 
-c c e e
+a:m a:m e e
+a:m a:m e e
+a:m a:m e e
+a:m a:m
+
+
+f f f f
+c c e e 
 a:m a:m a:m a:m
 
-d:m d:m g g
-c c a:m a:m
-a:m a:m d:m d:m
-g g c c 
-a:m a:m g g
-c c e e
+e e a:m a:m a:m a:m 
+
+g g c c e e
+
 a:m a:m a:m a:m
+
 d:m d:m d:m d:m
 }
 
@@ -198,7 +204,7 @@ Aj ty im do | bre na | daj!
 
 
 \markup {
-  1. 2. 3. Zelienaj sa zelená trávička (chalan-baba + kontra), (všetci), (spev baby)
+  1. 2. Zelienaj sa zelená trávička (chalan-baba + kontra), (všetci)
 }
 \score {
   <<
@@ -211,9 +217,7 @@ Aj ty im do | bre na | daj!
                \new Lyrics {
       \zelienaj_sa_slovaB
     }
-                   \new Lyrics {
-      \zelienaj_sa_slovaC
-    }
+                  
         \new ChordNames {
       \set chordChanges = ##t
        \zelienajKch
@@ -224,6 +228,30 @@ Aj ty im do | bre na | daj!
   >>
   \layout{ }
 }
+
+
+\markup {
+  3. Zelienaj sa zelená trávička (spev baby)
+}
+\score {
+  <<
+    \new Staff \transpose d g \zelienaj_sa_dmol_dole
+
+
+                   \new Lyrics {
+      \zelienaj_sa_slovaC
+    }  
+        \new ChordNames {
+      \set chordChanges = ##t
+       \transpose d g \zelienajKch
+    }
+    \new Staff \transpose d g  \zelienajK
+
+
+  >>
+  \layout{ }
+}
+
 
 
 \markup {
@@ -251,14 +279,14 @@ Aj ty im do | bre na | daj!
 }
 \score {
   <<
-    \new Staff \transpose d a \naco_dole
+    \new Staff \transpose a c \naco_dole
   
   
         \new ChordNames {
       \set chordChanges = ##t
-       \nacoKch
+       \transpose a c \nacoKch
     }
-    \new Staff \nacoK
+    \new Staff \transpose a c \nacoK
 
   >>
   \layout{ }
@@ -271,7 +299,7 @@ Aj ty im do | bre na | daj!
 }
 \score {
   <<
-    \new Staff \transpose d a \naco_dole
+    \new Staff \transpose a c \naco_dole
   
     
    \new Lyrics {
@@ -290,9 +318,9 @@ Aj ty im do | bre na | daj!
 
         \new ChordNames {
       \set chordChanges = ##t
-       \nacoKch
+       \transpose a c \nacoKch
     }
-    \new Staff \nacoK
+    \new Staff \transpose a c \nacoK
 
   >>
   \layout{ }
@@ -303,7 +331,7 @@ Aj ty im do | bre na | daj!
 }
 \score {
   <<
-    \new Staff \transpose d a \naco_doleB
+    \new Staff \transpose a c \naco_doleB
   
     
    \new Lyrics {
@@ -322,9 +350,9 @@ Aj ty im do | bre na | daj!
 
         \new ChordNames {
       \set chordChanges = ##t
-       \nacoKch
+        \transpose a c \nacoKch
     }
-    \new Staff \nacoK
+    \new Staff \transpose a c \nacoK
 
   >>
   \layout{ }
@@ -335,15 +363,15 @@ Aj ty im do | bre na | daj!
 }
 \score {
   <<
-    \new Staff \transpose d a \naco_doleB
+    \new Staff \transpose a g \naco_doleB
   
 
 
         \new ChordNames {
       \set chordChanges = ##t
-       \nacoKch
+       \transpose a g \nacoKch
     }
-    \new Staff \nacoK
+    \new Staff \transpose a g \nacoK
 
   >>
   \layout{ }
