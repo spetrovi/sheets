@@ -293,6 +293,8 @@ kochanovceSlovaC = \lyricmode {|Za -- bil -- som -- jed |nu -- hrd -- lí _ | č
 
 kochanovceSlovaD = \lyricmode {|Ve -- dne v -- noci |kr -- ko -- tá _ | lá  _ _ _ | Vedne -- v_no -- ci _  | kr -- kota -- la, _ | mo -- jej_mi -- lej _ | spať_ne -- da -- la, _ | mo -- jej mi -- lej | spať -- ne -- da _ |lá. _ _ _}
 
+kochanovceSlovaE = \lyricmode {|V_Ko -- cha -- nov -- cách |do -- zvo -- ní _ | lí  _ _ _ | V_Ko -- cha -- nov -- cách  | do -- zvo -- ni -- li, | už  Ja -- ní -- čka  | ob -- be -- si -- li, | už Ja -- ni -- čka | o -- be -- si _ |li. _ _ _}
+
 sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- ček | da -- rú _ _ | je. _ _ _ | No -- ci _ -- čka | tma -- vá je, _ | zboj -- ník _ sa | ra -- dú _ _ | je!}
 
 
@@ -481,7 +483,7 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
 
     
        \new Lyrics {
-      \kochanovceSlovaB
+      \kochanovceSlovaE
     }
   >>
   \layout{ }
