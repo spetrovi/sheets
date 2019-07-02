@@ -49,7 +49,7 @@ fis | g | c | c | g | bes | bes | a | g( | g4) r2^\markup { koruna} \bar "||"
   
   
 \repeat volta 1{
-|e^\markup {4}\downbow| e| e| e| f | cis | a| e4 r
+|d^\markup {4}\downbow| d| d| d| e | cis | a| d4 r
 }
 
 g2\downbow^\markup {5} g| a| a| gis| gis| a| a \bar "||" e| e| e| e| f| cis'(| a) | e8\downbow r e\upbow r \bar"||"\mark \markup { \musicglyph #"scripts.segno" }
