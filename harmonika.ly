@@ -13,14 +13,14 @@
 
 \time 2/2
   \clef alto
-
+  \set Score.markFormatter = #format-mark-box-numbers
 g2 g | e c| (b1 | b4) r4 r2 |
 
 (g1 | g4) r4 r2 | (a1 | a4) r4 r2 |
 
 b1 | bes | (b | b4) r4 r2 | (g1 | g4) r4 r2 |
 
-(a1 | a4) r4 r2 | g2 b2 | c'1 | (b1^\markup { 1 refrén} | b4) r4 r2 |
+(a1 | a4) r4 r2 | g2 b2 | c'1 | (b1\mark \default| b4) r4 r2 |
 
 |c2 c2( | c4) r4 r2 | (g1 | g4) r4 r2 | a1\downbow | a1 | (g1 | g4) r4 r2 |
 
@@ -33,26 +33,29 @@ a1 ( | a4) r r2| g1( | g4) r r2 | a1| a1| g4 g g g| g r g r \bar "||"
 \time 3/4
 
 \repeat volta 1{
-| c2.^\markup { 2 Valčík}\downbow  | c | e | g | b | b| fis | g |a |a |g|
+\mark \default\bar ".|:" c2.\downbow^\markup {Valčík}  | a | d | g | b | b| e | g |a |a |g|
 bes | bes | a | g | g4 r r |
 }
-bes2. | bes | c | a | fis | e | c2( a4) | b2. | c | a | e | g | b | b |
+b2. | b | c | a | e | e | b | g| b | b | c| a | e | d |
 
-fis | g | c | c | g | bes | bes | a | g( | g4) r2^\markup { koruna} \bar "||"
+
+c2( a4) | b2. | c | a | d | g | b | b |
+
+e | g | c | c | g | bes | bes | a | g( | g4\fermata) r r \bar "||"
 
   \key d \minor
   \time 2/4
+  \compressFullBarRests
+  R1*4\mark \default  \bar "||"
   
-  R8 \mark \markup { \musicglyph #"scripts.segno" } \bar "||"
-  
-  a2^\markup { 3}\downbow| e | e| a| cis| e| a |a | e | e| a| cis| a|a|a|
+  a2\downbow_"segno"| d | d| a| cis | a | d | a | a | d | d | a | cis | a | a | a |
   
   
 \repeat volta 1{
-|d^\markup {4}\downbow| d| d| d| e | cis | a| d4 r
+\mark \default|d\downbow| d| d| d| e | cis | a| d4 r
 }
 
-g2\downbow^\markup {5} g| a| a| gis| gis| a| a \bar "||" e| e| e| e| f| cis'(| a) | e8\downbow r e\upbow r \bar"||"\mark \markup { \musicglyph #"scripts.segno" }
+\mark \default g2\downbow g| a| a| gis| gis| a| a \bar "||" d| d| d| d| e| cis'(| a) | d8\downbow r d\upbow r_"Fine" \bar"||"\mark \markup { \musicglyph #"scripts.segno" }
 
 
 }
