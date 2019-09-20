@@ -3,7 +3,7 @@
 
 \header {
   title = "Hrozenská balada"
-  composer = "Samuel Petrovič"
+
     
 }
 
@@ -82,8 +82,8 @@ zlodzeje= {
 d''4 8 8| d e fis4|
 d fis8 fis| e cis a4|
 g4 b8 b| b cis d4| 
-a4 e8 e|  
-d cis a4|
+a4 e'8 e|  
+e cis a4|
 }
 }
 
@@ -295,11 +295,35 @@ kochanovceSlovaD = \lyricmode {|Ve -- dne v -- noci |kr -- ko -- tá _ | lá  _ 
 
 kochanovceSlovaE = \lyricmode {|V_Ko -- cha -- nov -- cách |do -- zvo -- ní _ | lí  _ _ _ | V_Ko -- cha -- nov -- cách  | do -- zvo -- ni -- li, | už  Ja -- ní -- čka  | ob -- be -- si -- li, | už Ja -- ni -- čka | o -- be -- si _ |li. _ _ _}
 
-sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- ček | da -- rú _ _ | je. _ _ _ | No -- ci _ -- čka | tma -- vá je, _ | zboj -- ník _ sa | ra -- dú _ _ | je!}
+sunkoSlovaA = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- ček | da -- rú _ _ | je. _ _ _ | No -- ci _ -- čka | tma -- vá je, _ | zboj -- ník _ sa | ra -- ____dú _ _ | je!}
+
+sunkoSlovaB = \lyricmode {Me sá -- _ ček | da -- ro -- val, _ | ja -- som _ -- vo | lky -- po _ _ | jal. _ _ _ | Ku -- rva _ -- mňa | chy -- ci li, _ | v _Are -- šte _ | se -- ____dim _ _ | sám!}
+
+sunkoSlovaC = \lyricmode {V Are -- _ šte | se -- dim -- sám, _ | eš -- te _ -- mňa | u -- drá _ _ | li. _ _ _ | Že -- by _ -- na | Bo -- šá -- ckem, _ | vol -- ky _ ne | ka -- ____pa _ _ | li!}
+
+zbojniciSlovaA = \lyricmode {Zboj -- _ ní -- ci | zlo -- dze -- je, _ | kto -- _ že vás | o -- dze -- je? _ | _Ci -- _  sár má | du -- ká -- ty | _ Kú -- _ pi -- Vám | ka -- bá ty!}
+
+zbojniciSlovaB = \lyricmode {Ci -- _ sár -- má | du -- ká -- ty, _ | Ci -- _ sá -- rka | bro -- ká -- ty. _ | _Keď -- _  ne -- dá | na  ka -- bát | _ hor -- _ sa -- ich | o -- zbí -- jať!}
+
+kykulskySlovaA = \lyricmode {Ky -- kul -- ský _ | zboj -- ní -- ci _ | ne -- choj -- _ te | za _ šian  _ | ci _ | _ _ ča -- ká -- _ ju  | tam na vás _ | Mo -- ráv -- _ sky | čet -- _ ní | _ ci!}
+
+kykulskySlovaB = \lyricmode {Mo -- rav -- ský _ | čet -- ní -- ci _ | slo -- ven -- _ ský | žan _ dá  _ | ri _ | _ _ sko -- vaj -- _ te  | si flin -- ty _ | do -- bu -- _ ka | do -- _ die | _ ry!}
+
+kykulskySlovaC = \lyricmode {Za -- bi -- jem _ | za -- bi -- jem _ | ka -- ma -- _ rá | ta _ své  _ | ho _ | _ _ le -- bo -- _ sa  | mi lú -- bi _ | fra -- je -- _ re | čka -- _ je | _ ho!}
+
+vojaciA = \lyricmode {Ked ma ne -- za | bi -- li _ _  | na vój -- _ ne | vo -- _ já _ | ci _ | _ _ už ma ne -- za | bi -- jú _ | _ ko -- pún -- _ sky | žeb -- _ rá | _ ci}
+
+kebychA = \lyricmode {Ke -- bých _ ja | ve -- del _ _  | ke -- bých _ ja | ve -- del _ _ | ke -- _ dy | _ ja -- _ um | _ ru _ | _ _ ke -- _ dy | _ ja _ um | _ ru }
+
+kebychB = \lyricmode {Dal -- bých _ si | spra -- viť _ _  | dal -- bých _ si | spra -- viť _ _ | du -- _ bo | _ vú -- _ tru | _ hlu _ | _ _ du -- _ bó | _ vu _ tru | _ hlu }
+
+kebychC = \lyricmode {Du -- bó _ vu | tru -- hlu _ _  | du -- bó _ vu | tru -- hlu _ _ | zVí -- _ ne | _ čka -- _ ve | _ ko _ | _ _ zVí -- _ ne | _ čka _ ve | _ ko }
+
+kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro -- vna _ _ | do -- _  hú | _ by -- _ cie | _ klo _ | _ _ do -- _ hú | _ by _ cie | _ klo }
 
 
 \markup {
-  Predspev
+  V Kochanovcách zvony zvoňá
 }
 \score {
   <<
@@ -309,33 +333,35 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
        \new Lyrics {
       \kochanovceSlovaA
     }
+    
+           \new Lyrics {
+      \kochanovceSlovaB
+    }
   >>
   \layout{ }
 }
 
 
+
+
 \markup {
-  Predspev
+  Čo sunko ukáže (predspev, medzihra, 1. sloha, 2. sloha, dohra)
 }
 \score {
   <<
     \new Staff \transpose d g, \sunko
 
        \new Lyrics {
-      \sunkoSlova
+      \sunkoSlovaA
     }
-
-  >>
-  \layout{ }
-}
-
-\markup {
-  Čo sunko ukáže 3x (medzihra, spev, spev)
-}
-\score {
-  <<
-    \new Staff \transpose d g, \sunko
-
+    
+           \new Lyrics {
+      \sunkoSlovaB
+    }
+    
+           \new Lyrics {
+      \sunkoSlovaC
+    }
     \new ChordNames {
       \set chordChanges = ##t
        \transpose d g, \sunkoKch
@@ -346,8 +372,9 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
   \layout{ }
 }
 
+
 \markup {
-  Spev
+  V Kochanovcách zvony zvoňá
 }
 \score {
   <<
@@ -357,6 +384,10 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
        \new Lyrics {
       \kochanovceSlovaB
     }
+    
+           \new Lyrics {
+      \kochanovceSlovaC
+    }
   >>
   \layout{ }
 }
@@ -364,12 +395,14 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
 
 
 \markup {
-  Ked ma nezabili 2x (spev, medzihra)
+  Ked ma nezabili (predspev, medzihra)
 }
 \score {
   <<
     \new Staff \transpose d g, \kedma
-
+           \new Lyrics {
+      \vojaciA
+    }
     \new ChordNames {
       \set chordChanges = ##t
        \transpose d g, \kedmaKch
@@ -381,13 +414,21 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
 }
 
 
+
 \markup {
-  Zbojníci zlodzeje 2x (spev, medzihra)
+  Zbojníci zlodzeje (1. sloha, 2. sloha)
 }
 \score {
   <<
     \new Staff \transpose d g, \zlodzeje
-
+           \new Lyrics {
+      \zbojniciSlovaA
+    }
+    
+               \new Lyrics {
+      \zbojniciSlovaB
+    }
+    
     \new ChordNames {
       \set chordChanges = ##t
      \transpose d g,  \zlodzejeKch
@@ -398,14 +439,24 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
   \layout{ }
 }
 
-
 \markup {
-  Kykulský zbojníci 4x (predspev, medzihra, spev, dohra)
+  Kykulský zbojníci (1. sloha, 2. sloha, 3. sloha)
 }
 \score {
   <<
     \new Staff \transpose d g, \zbojnici
-
+               \new Lyrics {
+      \kykulskySlovaA
+    }
+    
+               \new Lyrics {
+      \kykulskySlovaB
+    }
+    
+                   \new Lyrics {
+      \kykulskySlovaC
+    }
+    
     \new ChordNames {
       \set chordChanges = ##t
       \transpose d g, \zbojniciKch
@@ -416,10 +467,8 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
   \layout{ }
 }
 
-
-
 \markup {
-  Spev 2x
+  V Kochanovcách zvony zvoňá
 }
 \score {
   <<
@@ -429,6 +478,7 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
        \new Lyrics {
       \kochanovceSlovaC
     }
+    
            \new Lyrics {
       \kochanovceSlovaD
     }
@@ -437,18 +487,54 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
 }
 
 
-\pageBreak
+\markup {
+  Ked ma nezabili (predspev, medzihra)
+}
+\score {
+  <<
+    \new Staff \transpose d g, \kedma
+           \new Lyrics {
+      \vojaciA
+    }
+    \new ChordNames {
+      \set chordChanges = ##t
+       \transpose d g, \kedmaKch
+    }
+    \new Staff \transpose d g,  \kedmaK
+
+  >>
+  \layout{ }
+}
+
+
+
 
 \markup {
-  Kebych ja vedev 2x
+  Kebych ja vedev (1. sloha, 2. sloha)
 }
 \score {
   <<
     \new Staff \transpose d g, \kebych
+    
+        
+               \new Lyrics {
+      \kebychA
+    }
+    
+    
+                   \new Lyrics {
+      \kebychB
+    }
+    
+
+    
+    
     \new ChordNames {
       \set chordChanges = ##t
        \transpose d g, \kebychKch
     }
+
+    
     \new Staff \transpose d g, \kebychK
 
 
@@ -458,11 +544,20 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
 }
 
 \markup {
-  Kebych ja vedev D dur 1x + dohra
+  Kebych ja vedev D dur (3. sloha, 4. sloha, zaver)
 }
 \score {
   <<
     \new Staff \kebych
+    
+                           \new Lyrics {
+      \kebychC
+    }
+    
+                           \new Lyrics {
+      \kebychD
+    }
+    
     \new ChordNames {
       \set chordChanges = ##t
       \kebychKch
@@ -473,9 +568,8 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
   \layout{ }
 }
 
-
 \markup {
-  Zaver
+  V Kochanovcách zvony zvoňá
 }
 \score {
   <<
@@ -485,10 +579,7 @@ sunkoSlova = \lyricmode {Čo sun -- _ ko | u -- ká -- že, _ | me -- sá _ -- �
        \new Lyrics {
       \kochanovceSlovaE
     }
+
   >>
   \layout{ }
 }
-
-
-
-
