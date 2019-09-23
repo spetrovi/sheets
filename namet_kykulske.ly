@@ -1,5 +1,6 @@
 VERII
 
+od Hcka
 V kochanovcach zvony zvona
 V kochanovcach zvony zvona,
 uz Janicka draby hona, uz janicka draby hona
