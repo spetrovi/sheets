@@ -2,7 +2,7 @@
 
 
 \header {
-  title = "Hrozenská balada"
+  title = "V Kochanovcách zvony zvoňa"
 
     
 }
@@ -60,6 +60,33 @@ e e
 a:m a:m
 }
 
+dohra= {
+  \clef violin
+  \key d \major
+  \time 2/4
+\relative d''{
+a8 b cis d | e4^\markup { \italic spomalenie } b4 | a a8\upbow a\upbow | a2
+}
+}
+
+dohraK = {
+  \clef violin
+  \key d \major
+  \time 2/4
+\relative{
+<d' a'>8  <d a'>  <d a'> <d a'>
+<e a>4^\markup { \italic spomalenie }  <e a>
+<d a'>4  <d a'>8\upbow  <d a'>\upbow
+<d a'>2
+}
+}
+
+dohraKch = \chordmode {
+d8 d d d
+a a a a
+d 4 d8 d
+d2
+}
 
 sunko= {
   \clef violin
@@ -69,7 +96,21 @@ sunko= {
 d8 fis4 fis8 | g fis e4
 | e8 e4 d8| g fis4. | e2|
 e8 e4 d8 |  e d e4 | 
-a8 a4 g8 |fis4 e | d2 
+a8 a4 g8 |fis4 e | d2 |
+}
+}
+
+sunkoDohra= {
+  \clef violin
+  \key d \major
+  \time 2/4
+\relative d''{
+d8 fis4 fis8 | g fis e4
+| e8 e4 d8| g fis4. | e2|
+e8 e4 d8 |  e d e4 | 
+a8 a4 g8 |fis4 e | d2 |
+
+a8 b cis d | e4^\markup { \italic spomalenie } b4 | a a8\upbow a\upbow | a2
 }
 }
 
@@ -92,19 +133,19 @@ zlodzejeK = {
   \key d \major
   \time 2/4
 \relative{
-<d' a'>8  <d a'>  <d a'> <d a'>
-<d a'>  <d a'> <d a'> <d a'>
-<d a'>  <d a'> <d a'> <d a'>
-<d a'>  <d a'> <d a'>  <d a'>
-<e b> <e b> <e b> <e b>
-<e b> <e b> <e b> <e b>
-<e a> <e a> <e a> <e a>
-<d a'> <d a'> <d a'> <d a'>
+<d' a'>8-.  <d a'>-.  <d a'>-. <d a'>-.
+<d a'>-.  <d a'>-. <d a'>-. <d a'>-.
+<d a'>-.  <d a'>-. <d a'>-. <d a'>-.
+<d a'>-.  <d a'>-. <d a'>-.  <d a'>-.
+<e b>-. <e b>-. <e b>-. <e b>-.
+<e b>-. <e b>-. <e b>-. <e b>-.
+<e a>-. <e a>-. <e a>-. <e a>-.
+<d a'>-. <d a'>-. <d a'>-. <d a'>-.
 }
 }
 
 zlodzejeKch = \chordmode {
-d d d d
+d8 d d d
 d d d d
 d d d d
 d d d d
@@ -127,6 +168,22 @@ a8 a4 g8 | fis4 e | d2 |
 }
 }
 
+zbojniciDohra= {
+  \clef violin
+  \key d \major
+  \time 2/4
+\relative{
+d''8 fis4 fis8 | g8 fis e4|
+e8 e4 d8 | g4 fis | e2 |
+e8 e4 d8 | e d e4|
+a8 a4 g8 | fis4 e | d2 |
+
+
+a8 b cis d | e4^\markup { \italic spomalenie } b4 | a a8\upbow a\upbow | a2
+}
+}
+
+
 
 kebych= {
   \clef violin
@@ -143,6 +200,22 @@ a'4 g | fis e  | d2
 }}
 }
 
+kebychDohra= {
+  \clef violin
+  \key d \major
+  \time 2/4
+  
+
+\relative{
+\repeat volta 2{
+d''8 d4 fis8 | e d4.| 
+fis8 fis4 a8 | g fis4.|
+e4 d | cis4 b | a2|
+a'4 g | fis e  | d2
+}
+a8 b cis d | e4^\markup { \italic spomalenie } b4 | a a8\upbow a\upbow | a2}
+}
+
 kedma= {
   \clef violin
   \key d \major
@@ -150,10 +223,14 @@ kedma= {
   
 
 \relative{
+\repeat volta 2 {
 d''8 e fis gis | a a4.|
 fis8 e4 d8 | cis4 d| e2|
 e8 fis gis a| b a4.|
 b8 a4 gis8 |fis4 e | d2 
+}
+
+a8 b cis d | e4^\markup { \italic sekane } b4 
 }
 }
 
@@ -172,11 +249,15 @@ kedmaK = {
 <e a> <e a> <e a> <e a>
 <e b> <e b> <e a> <e a>
 <d a'> <d a'> <d a'> <d a'>
+
+<fis d> <fis d> <fis d> <fis d>
+<e a>4-"sekane"  <e a>
+
 }
 }
 
 kedmaKch = \chordmode {
-d d d d
+d8 d d d
 d d d d
 d d d d
 d d d d
@@ -186,6 +267,8 @@ a a a a
 a a a a
 e e a a
 d d d d 
+d d d d
+a2 a2
 }
 
 sunkoK = {
@@ -193,21 +276,23 @@ sunkoK = {
   \key d \major
   \time 2/4
 \relative{
-<d' a'>8  <d a'>  <d a'> <d a'>
-<d a'>  <d a'> <d a'> <d a'>
-<d a'>  <d a'> <d a'> <d a'>
-<d a'>  <d a'> <d a'>  <d a'>
-<e a> <e a> <e a> <e a>
-<e a> <e a> <e a> <e a>
-<e a> <e a> <e a> <e a>
-<e a> <e a> <e a> <e a>
-<e b'> <e b'> <e a> <e a> 
-<d a'> <d a'> <d a'> <d a'>
+<fis'' d>8  <fis d> <fis d> <fis d>
+<fis d> <fis d> <fis d> <fis d>
+<fis d> <fis d> <fis d> <fis d>
+<fis d> <fis d> <fis d> <fis d>
+<e a,> <e a,> <e a,> <e a,>
+<e a,> <e a,> <e a,> <e a,>
+<e a,> <e a,> <e a,> <e a,>
+<e a,> <e a,> <e a,> <e a,>
+
+<e b> <e b> <e a,> <e a,>
+
+<fis d> <fis d> <fis d> <fis d>
 }
 }
 
 sunkoKch = \chordmode {
-d d d d
+d8 d d d
 d d d d
 d d d d
 d d d d
@@ -219,6 +304,47 @@ e e a a
 d d d d
 }
 
+sunkoDohraK = {
+  \clef violin
+  \key d \major
+  \time 2/4
+\relative{
+<fis'' d>8  <fis d> <fis d> <fis d>
+<fis d> <fis d> <fis d> <fis d>
+<fis d> <fis d> <fis d> <fis d>
+<fis d> <fis d> <fis d> <fis d>
+<e a,> <e a,> <e a,> <e a,>
+<e a,> <e a,> <e a,> <e a,>
+<e a,> <e a,> <e a,> <e a,>
+<e a,> <e a,> <e a,> <e a,>
+
+<e b> <e b> <e a,> <e a,>
+
+<fis d> <fis d> <fis d> <fis d>
+
+<fis d> <fis d> <fis d> <fis d>
+<e a,>4-"spomalenie"  <e a,>
+<fis d>4  <fis d>8\upbow  <fis d>\upbow
+<fis d>2
+}
+}
+
+sunkoDohraKch = \chordmode {
+d8 d d d
+d d d d
+d d d d
+d d d d
+a a a a
+a a a a 
+a a a a
+a a a a
+e e a a
+d d d d
+d8 d d d
+a a a a
+d 4 d8 d
+d2
+}
 
 
 zbojniciK = {
@@ -239,8 +365,31 @@ zbojniciK = {
 }
 }
 
+zbojniciDohraK = {
+  \clef violin
+  \key d \major
+  \time 2/4
+\relative{
+<d' a'>8  <d a'>  <d a'> <d a'>
+<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> <d a'>  <d a'>
+<e b'> <e b'> <e b'> <e b'>
+<e a> <e a> <e a> <e a>
+<e a> <e a> <e a> <e a>
+<e a> <e a> <e a> <e a>
+<e b'> <e b'> <e a> <e a> 
+<d a'> <d a'> <d a'> <d a'>
+
+<fis d> <fis d> <fis d> <fis d>
+<e a,>4-"spomalenie"  <e a,>
+<fis d>4  <fis d>8\upbow  <fis d>\upbow
+<fis d>2
+}
+}
+
 zbojniciKch = \chordmode {
-d d d d
+d8 d d d
 d d d d
 d d d d
 d d d d
@@ -251,6 +400,22 @@ e e a a
 d d d d
 }
 
+zbojniciDohraKch = \chordmode {
+d8 d d d
+d d d d
+d d d d
+d d d d
+e e e e
+a a a a 
+a a a a
+e e a a
+d d d d
+
+d8 d d d
+a a a a
+d 4 d8 d
+d2
+}
 
 
 kebychK = {
@@ -268,11 +433,36 @@ kebychK = {
 <e b'> <e b'> <e b'> <e b'>
 <e a> <e a> <e a> <e a>
 <d a'> <d a'> <d a'> <d a'>
+
+
+}
+}
+
+kebychDohraK = {
+  \clef violin
+  \key d \major
+  \time 2/4
+\relative{
+<d' a'>8  <d a'>  <d a'> <d a'>
+<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> <d a'>  <d a'>
+<e a> <e a> <e a> <e a>
+<e a> <e a> <e a> <e a>
+<d a'>  <d a'> <d a'>  <d a'>
+<e b'> <e b'> <e b'> <e b'>
+<e a> <e a> <e a> <e a>
+<d a'> <d a'> <d a'> <d a'>
+
+<fis d> <fis d> <fis d> <fis d>
+<e a,>4-"spomalenie"  <e a,>
+<fis d>4  <fis d>8\upbow  <fis d>\upbow
+<fis d>2
 }
 }
 
 kebychKch = \chordmode {
-d d d d
+d8 d d d
 d d d d
 d d d d
 d d d d
@@ -282,6 +472,28 @@ d d d d
 e e e e
 a a a a
 d d d d
+}
+
+kebychDohraKch = \chordmode {
+d8 d d d
+d d d d
+d d d d
+d d d d
+a a a a
+a a a a
+d d d d
+e e e e
+a a a a
+d d d d
+
+d8 d d d
+a a a a
+d 4 d8 d
+d2
+}
+
+dummy = \chordmode {
+d8 
 }
 
 
@@ -323,12 +535,12 @@ kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro 
 
 
 \markup {
-  V Kochanovcách zvony zvoňá
+
+    V Kochanovcách zvony zvoňá \bold {1, 2} 
 }
 \score {
   <<
     \new Staff \kochanovce
-
     
        \new Lyrics {
       \kochanovceSlovaA
@@ -345,7 +557,7 @@ kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro 
 
 
 \markup {
-  Čo sunko ukáže (predspev, medzihra, 1. sloha, 2. sloha, dohra)
+  Čo sunko ukáže ( \bold{3.} predspev, \bold{4.} medzihra, \bold{5.} spev, \bold{6.} spev)
 }
 \score {
   <<
@@ -373,8 +585,29 @@ kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro 
 }
 
 
+
 \markup {
-  V Kochanovcách zvony zvoňá
+  Čo sunko ukáže (\bold{7.} medzihra + koniec)
+}
+\score {
+  <<
+    \new Staff  \transpose d g, \sunkoDohra
+
+
+    \new ChordNames {
+      \set chordChanges = ##t
+        \transpose d g, \sunkoDohraKch
+    }
+    
+    \new Staff \transpose d g, \sunkoDohraK
+
+  >>
+  \layout{ }
+}
+
+
+\markup {
+  V Kochanovcách zvony zvoňá \bold {8., 9.} 
 }
 \score {
   <<
@@ -395,7 +628,7 @@ kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro 
 
 
 \markup {
-  Ked ma nezabili (predspev, medzihra)
+  Ked ma nezabili (\bold {10.}predspev, \bold {11.}medzihra)
 }
 \score {
   <<
@@ -416,7 +649,7 @@ kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro 
 
 
 \markup {
-  Zbojníci zlodzeje (1. sloha, 2. sloha)
+  Zbojníci zlodzeje (\bold{12.}spev, \bold{13.}spev)
 }
 \score {
   <<
@@ -440,7 +673,7 @@ kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro 
 }
 
 \markup {
-  Kykulský zbojníci (1. sloha, 2. sloha, 3. sloha)
+  Kykulský zbojníci (\bold{14.}a capella spev, \bold{15.}2. spev, \bold{16.} medzihra, \bold{17.}spev)
 }
 \score {
   <<
@@ -467,8 +700,30 @@ kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro 
   \layout{ }
 }
 
+
+
 \markup {
-  V Kochanovcách zvony zvoňá
+  Kykulský zbojníci (\bold{18.} medzihra + konec)
+}
+\score {
+  <<
+    \new Staff \transpose d g, \zbojniciDohra
+
+    
+    \new ChordNames {
+      \set chordChanges = ##t
+      \transpose d g, \zbojniciDohraKch
+    }
+    \new Staff \transpose d g, \zbojniciDohraK
+
+  >>
+  \layout{ }
+}
+
+
+
+\markup {
+  V Kochanovcách zvony zvoňá (\bold{19.}, \bold{20.})
 }
 \score {
   <<
@@ -487,30 +742,12 @@ kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro 
 }
 
 
-\markup {
-  Ked ma nezabili (predspev, medzihra)
-}
-\score {
-  <<
-    \new Staff \transpose d g, \kedma
-           \new Lyrics {
-      \vojaciA
-    }
-    \new ChordNames {
-      \set chordChanges = ##t
-       \transpose d g, \kedmaKch
-    }
-    \new Staff \transpose d g,  \kedmaK
-
-  >>
-  \layout{ }
-}
 
 
 
 
 \markup {
-  Kebych ja vedev (1. sloha, 2. sloha)
+  Kebych ja vedev (\bold{21.} a capella, \bold{22.} medzihra)
 }
 \score {
   <<
@@ -544,7 +781,7 @@ kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro 
 }
 
 \markup {
-  Kebych ja vedev D dur (3. sloha, 4. sloha, zaver)
+  Kebych ja vedev D dur (\bold{23.} spev)
 }
 \score {
   <<
@@ -569,7 +806,26 @@ kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro 
 }
 
 \markup {
-  V Kochanovcách zvony zvoňá
+  Kebych ja vedev D dur (\bold{24.} medzihra a konec)
+}
+\score {
+  <<
+    \new Staff \kebychDohra
+    
+
+    
+    \new ChordNames {
+      \set chordChanges = ##t
+      \kebychDohraKch
+    }
+    \new Staff \kebychDohraK
+
+  >>
+  \layout{ }
+}
+
+\markup {
+  V Kochanovcách zvony zvoňá (\bold {25.} \italic {konec}) 
 }
 \score {
   <<

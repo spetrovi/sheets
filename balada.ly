@@ -328,7 +328,7 @@ kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro 
 \score {
   <<
     \new Staff \kochanovce
-
+    \new Staff {R20}
     
        \new Lyrics {
       \kochanovceSlovaA
