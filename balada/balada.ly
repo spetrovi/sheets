@@ -83,7 +83,7 @@ dohraK = {
 
 dohraKch = \chordmode {
 d8 d d d
-a a a a
+d d a a
 d 4 d8 d
 d2
 }
@@ -108,9 +108,9 @@ sunkoDohra= {
 d8 fis4 fis8 | g fis e4
 | e8 e4 d8| g fis4. | e2|
 e8 e4 d8 |  e d e4 | 
-a8 a4 g8 |fis4 e | d2 |
+a8 a4 g8 |fis4 e | d2 \bar "||"
 
-a8 b cis d | e4^\markup { \italic spomalenie } b4 | a a8\upbow a\upbow | a2
+a8^\markup { \italic dohra } b cis d | e4^\markup { \italic spomalenie } b4 | a a8\upbow a\upbow | a2
 }
 }
 
@@ -179,7 +179,7 @@ e8 e4 d8 | e d e4|
 a8 a4 g8 | fis4 e | d2 |
 
 
-a8 b cis d | e4^\markup { \italic spomalenie } b4 | a a8\upbow a\upbow | a2
+a8^\markup { \italic dohra } b cis d | e4^\markup { \italic spomalenie } b4 | a a8\upbow a\upbow | a2
 }
 }
 
@@ -213,7 +213,7 @@ fis8 fis4 a8 | g fis4.|
 e4 d | cis4 b | a2|
 a'4 g | fis e  | d2
 }
-a8 b cis d | e4^\markup { \italic spomalenie } b4 | a a8\upbow a\upbow | a2}
+a8^\markup { \italic dohra } b cis d | e4^\markup { \italic spomalenie } gis4 | a a8\upbow a\upbow | a2}
 }
 
 kedma= {
@@ -230,7 +230,7 @@ e8 fis gis a| b a4.|
 b8 a4 gis8 |fis4 e | d2 
 }
 
-a8 b cis d | e4^\markup { \italic sekane } b4 
+a8 b cis d | e4^\markup{ \italic sekane }-. b4-.
 }
 }
 
@@ -251,7 +251,7 @@ kedmaK = {
 <d a'> <d a'> <d a'> <d a'>
 
 <fis d> <fis d> <fis d> <fis d>
-<e a>4-"sekane"  <e a>
+<e a>4-"sekane"-.  <e a>-.
 
 }
 }
@@ -321,9 +321,9 @@ sunkoDohraK = {
 <e b> <e b> <e a,> <e a,>
 
 <fis d> <fis d> <fis d> <fis d>
-
-<fis d> <fis d> <fis d> <fis d>
-<e a,>4-"spomalenie"  <e a,>
+\bar "||"
+<fis d>-"dohra" <fis d> <fis d> <fis d>
+<fis d>4-"spomalenie"  <e a,>
 <fis d>4  <fis d>8\upbow  <fis d>\upbow
 <fis d>2
 }
@@ -341,7 +341,7 @@ a a a a
 e e a a
 d d d d
 d8 d d d
-a a a a
+d d a a
 d 4 d8 d
 d2
 }
@@ -380,9 +380,9 @@ zbojniciDohraK = {
 <e a> <e a> <e a> <e a>
 <e b'> <e b'> <e a> <e a> 
 <d a'> <d a'> <d a'> <d a'>
-
-<fis d> <fis d> <fis d> <fis d>
-<e a,>4-"spomalenie"  <e a,>
+\bar "||"
+<fis d>-"dohra" <fis d> <fis d> <fis d>
+<fis d>4-"spomalenie"  <e a,>
 <fis d>4  <fis d>8\upbow  <fis d>\upbow
 <fis d>2
 }
@@ -412,7 +412,7 @@ e e a a
 d d d d
 
 d8 d d d
-a a a a
+d d a a
 d 4 d8 d
 d2
 }
@@ -449,15 +449,14 @@ kebychDohraK = {
 <d a'>  <d a'> <d a'>  <d a'>
 <e a> <e a> <e a> <e a>
 <e a> <e a> <e a> <e a>
-<d a'>  <d a'> <d a'>  <d a'>
-<e b'> <e b'> <e b'> <e b'>
 <e a> <e a> <e a> <e a>
+<e a> <e a> <e a> <e a>
+<e b'> <e b'> <e a> <e a>
 <d a'> <d a'> <d a'> <d a'>
-
-<fis d> <fis d> <fis d> <fis d>
-<e a,>4-"spomalenie"  <e a,>
-<fis d>4  <fis d>8\upbow  <fis d>\upbow
-<fis d>2
+<d a'>-"dohra"  <d a'> <d a'> <d a'>
+<fis d>4-"spomalenie"  <e a>
+<d a'> 4  <d a'> 8\upbow  <d a'> \upbow
+<d a'> 2
 }
 }
 
@@ -468,9 +467,9 @@ d d d d
 d d d d
 a a a a
 a a a a
-d d d d
-e e e e
 a a a a
+a a a a
+e e a a
 d d d d
 }
 
@@ -481,13 +480,13 @@ d d d d
 d d d d
 a a a a
 a a a a
-d d d d
-e e e e
 a a a a
+a a a a
+e e a a
 d d d d
 
 d8 d d d
-a a a a
+d d a a
 d 4 d8 d
 d2
 }
@@ -534,308 +533,4 @@ kebychC = \lyricmode {Du -- bó _ vu | tru -- hlu _ _  | du -- bó _ vu | tru --
 kebychD = \lyricmode {Že -- bý _ mi | zro -- vna _ _  | že -- bý _ mi | zro -- vna _ _ | do -- _  hú | _ by -- _ cie | _ klo _ | _ _ do -- _ hú | _ by _ cie | _ klo }
 
 
-\markup {
 
-    V Kochanovcách zvony zvoňá \bold {1, 2} 
-}
-\score {
-  <<
-    \new Staff \kochanovce
-    
-       \new Lyrics {
-      \kochanovceSlovaA
-    }
-    
-           \new Lyrics {
-      \kochanovceSlovaB
-    }
-  >>
-  \layout{ }
-}
-
-
-
-
-\markup {
-  Čo sunko ukáže ( \bold{3.} predspev, \bold{4.} medzihra, \bold{5.} spev, \bold{6.} spev)
-}
-\score {
-  <<
-    \new Staff \transpose d g, \sunko
-
-       \new Lyrics {
-      \sunkoSlovaA
-    }
-    
-           \new Lyrics {
-      \sunkoSlovaB
-    }
-    
-           \new Lyrics {
-      \sunkoSlovaC
-    }
-    \new ChordNames {
-      \set chordChanges = ##t
-       \transpose d g, \sunkoKch
-    }
-    \new Staff \transpose d g, \sunkoK
-
-  >>
-  \layout{ }
-}
-
-
-
-\markup {
-  Čo sunko ukáže (\bold{7.} medzihra + koniec)
-}
-\score {
-  <<
-    \new Staff  \transpose d g, \sunkoDohra
-
-
-    \new ChordNames {
-      \set chordChanges = ##t
-        \transpose d g, \sunkoDohraKch
-    }
-    
-    \new Staff \transpose d g, \sunkoDohraK
-
-  >>
-  \layout{ }
-}
-
-
-\markup {
-  V Kochanovcách zvony zvoňá \bold {8., 9.} 
-}
-\score {
-  <<
-    \new Staff \kochanovce
-
-    
-       \new Lyrics {
-      \kochanovceSlovaB
-    }
-    
-           \new Lyrics {
-      \kochanovceSlovaC
-    }
-  >>
-  \layout{ }
-}
-
-
-
-\markup {
-  Ked ma nezabili (\bold {10.}predspev, \bold {11.}medzihra)
-}
-\score {
-  <<
-    \new Staff \transpose d g, \kedma
-           \new Lyrics {
-      \vojaciA
-    }
-    \new ChordNames {
-      \set chordChanges = ##t
-       \transpose d g, \kedmaKch
-    }
-    \new Staff \transpose d g,  \kedmaK
-
-  >>
-  \layout{ }
-}
-
-
-
-\markup {
-  Zbojníci zlodzeje (\bold{12.}spev, \bold{13.}spev)
-}
-\score {
-  <<
-    \new Staff \transpose d g, \zlodzeje
-           \new Lyrics {
-      \zbojniciSlovaA
-    }
-    
-               \new Lyrics {
-      \zbojniciSlovaB
-    }
-    
-    \new ChordNames {
-      \set chordChanges = ##t
-     \transpose d g,  \zlodzejeKch
-    }
-    \new Staff \transpose d g, \zlodzejeK
-
-  >>
-  \layout{ }
-}
-
-\markup {
-  Kykulský zbojníci (\bold{14.}a capella spev, \bold{15.}2. spev, \bold{16.} medzihra, \bold{17.}spev)
-}
-\score {
-  <<
-    \new Staff \transpose d g, \zbojnici
-               \new Lyrics {
-      \kykulskySlovaA
-    }
-    
-               \new Lyrics {
-      \kykulskySlovaB
-    }
-    
-                   \new Lyrics {
-      \kykulskySlovaC
-    }
-    
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose d g, \zbojniciKch
-    }
-    \new Staff \transpose d g, \zbojniciK
-
-  >>
-  \layout{ }
-}
-
-
-
-\markup {
-  Kykulský zbojníci (\bold{18.} medzihra + konec)
-}
-\score {
-  <<
-    \new Staff \transpose d g, \zbojniciDohra
-
-    
-    \new ChordNames {
-      \set chordChanges = ##t
-      \transpose d g, \zbojniciDohraKch
-    }
-    \new Staff \transpose d g, \zbojniciDohraK
-
-  >>
-  \layout{ }
-}
-
-
-
-\markup {
-  V Kochanovcách zvony zvoňá (\bold{19.}, \bold{20.})
-}
-\score {
-  <<
-    \new Staff \kochanovce
-
-    
-       \new Lyrics {
-      \kochanovceSlovaC
-    }
-    
-           \new Lyrics {
-      \kochanovceSlovaD
-    }
-  >>
-  \layout{ }
-}
-
-
-
-
-
-
-\markup {
-  Kebych ja vedev (\bold{21.} a capella, \bold{22.} medzihra)
-}
-\score {
-  <<
-    \new Staff \transpose d g, \kebych
-    
-        
-               \new Lyrics {
-      \kebychA
-    }
-    
-    
-                   \new Lyrics {
-      \kebychB
-    }
-    
-
-    
-    
-    \new ChordNames {
-      \set chordChanges = ##t
-       \transpose d g, \kebychKch
-    }
-
-    
-    \new Staff \transpose d g, \kebychK
-
-
-
-  >>
-  \layout{ }
-}
-
-\markup {
-  Kebych ja vedev D dur (\bold{23.} spev)
-}
-\score {
-  <<
-    \new Staff \kebych
-    
-                           \new Lyrics {
-      \kebychC
-    }
-    
-                           \new Lyrics {
-      \kebychD
-    }
-    
-    \new ChordNames {
-      \set chordChanges = ##t
-      \kebychKch
-    }
-    \new Staff \kebychK
-
-  >>
-  \layout{ }
-}
-
-\markup {
-  Kebych ja vedev D dur (\bold{24.} medzihra a konec)
-}
-\score {
-  <<
-    \new Staff \kebychDohra
-    
-
-    
-    \new ChordNames {
-      \set chordChanges = ##t
-      \kebychDohraKch
-    }
-    \new Staff \kebychDohraK
-
-  >>
-  \layout{ }
-}
-
-\markup {
-  V Kochanovcách zvony zvoňá (\bold {25.} \italic {konec}) 
-}
-\score {
-  <<
-    \new Staff \kochanovce
-
-    
-       \new Lyrics {
-      \kochanovceSlovaE
-    }
-
-  >>
-  \layout{ }
-}
