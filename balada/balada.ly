@@ -2,7 +2,7 @@
 
 
 \header {
-  title = "V Kochanovcách zvony zvoňa"
+  title = "V Kochanovcách zvony zvoňá"
 
     
 }
