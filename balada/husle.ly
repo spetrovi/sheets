@@ -2,6 +2,13 @@
 
 \include "/home/spetrovi/git/sheets/balada/balada.ly"
 
+\paper {
+
+  indent = 0\cm
+  }
+
+  
+  
 \markup {
 
     V Kochanovcách zvony zvoňá (\bold {1., 2.})
@@ -10,7 +17,7 @@
   <<
     \new Staff {R2*20}
   >>
-  \layout{ }
+
 }
 
 
@@ -47,11 +54,11 @@
 \score {
   <<
     \new Staff  \transpose d g, \sunkoDohra
-
+        
 
 
   >>
-  \layout{ }
+  \layout{ \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/32)}
 }
 
 

@@ -1,7 +1,10 @@
 \version "2.19.80"
 
 \include "/home/spetrovi/git/sheets/balada/balada.ly"
+\paper {
 
+  indent = 0\cm
+  }
 \markup {
 
     V Kochanovcách zvony zvoňá (\bold {1., 2.})
