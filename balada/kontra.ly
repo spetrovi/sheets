@@ -90,7 +90,7 @@
       \set chordChanges = ##t
        \transpose d g, \kedmaKch
     }
-    \new Staff \transpose d g,  \kedmaK
+    \new Staff  \kedmaKG
            \new Lyrics {
       \vojaciA
     }
@@ -112,7 +112,7 @@
       \set chordChanges = ##t
      \transpose d g,  \zlodzejeKch
     }
-    \new Staff \transpose d g, \zlodzejeK
+    \new Staff  \zlodzejeKG
            \new Lyrics {
       \zbojniciSlovaA
     }
@@ -131,11 +131,12 @@
   <<
 
     
+    
     \new ChordNames {
       \set chordChanges = ##t
       \transpose d g, \zbojniciKch
     }
-    \new Staff \transpose d g, \zbojniciK
+    \new Staff \zbojniciKG
 
                \new Lyrics {
       \kykulskySlovaA
@@ -159,15 +160,11 @@
 }
 \score {
   <<
-
-
-    
     \new ChordNames {
       \set chordChanges = ##t
       \transpose d g, \zbojniciDohraKch
     }
-    \new Staff \transpose d g, \zbojniciDohraK
-
+    \new Staff \zbojniciDohraKG
   >>
   \layout{ }
 }
@@ -193,14 +190,7 @@
   Kebych ja vedev (\bold{21.} a capella, \bold{22.} medzihra)
 }
 \score {
-  <<
-
-    
-        
-
-    
-
-    
+  <<    
     
     \new ChordNames {
       \set chordChanges = ##t
@@ -208,7 +198,8 @@
     }
 
     
-    \new Staff \transpose d g, \kebychK
+    \new Staff  \kebychKG
+
                \new Lyrics {
       \kebychA
     }
@@ -224,19 +215,18 @@
 }
 
 \markup {
-  Kebych ja vedev D dur (\bold{23.} spev)
+  Kebych ja vedev A dur (\bold{23.} spev)
 }
 \score {
   <<
 
-    
-
+ 
     
     \new ChordNames {
       \set chordChanges = ##t
-      \kebychKch
+      \transpose d a, \kebychKchbO
     }
-    \new Staff \kebychK
+    \new Staff \kebychKA
                            \new Lyrics {
       \kebychC
     }
@@ -249,19 +239,17 @@
 }
 
 \markup {
-  Kebych ja vedev D dur (\bold{24.} medzihra a konec)
+  Kebych ja vedev A dur (\bold{24.} medzihra a konec)
 }
 \score {
   <<
 
     
-
-    
     \new ChordNames {
       \set chordChanges = ##t
-      \kebychDohraKch
+      \transpose d a \kebychDohraKch
     }
-    \new Staff \kebychDohraK
+    \new Staff \kebychDohraKA
 
   >>
   \layout{ }

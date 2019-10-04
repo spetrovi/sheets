@@ -189,7 +189,7 @@
 }
 \score {
   <<
-    \new Staff \kebych
+    \new Staff \transpose d a, \kebych
     
                            \new Lyrics {
       \kebychC
@@ -208,7 +208,7 @@
 }
 \score {
   <<
-    \new Staff \kebychDohra
+    \new Staff  \kebychDohra
     
 
 

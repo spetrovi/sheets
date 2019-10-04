@@ -111,7 +111,7 @@
       \set chordChanges = ##t
        \transpose d g, \kedmaKch
     }
-    \new Staff \transpose d g,  \kedmaK
+    \new Staff  \kedmaKG
 
   >>
   \layout{ }
@@ -137,7 +137,7 @@
       \set chordChanges = ##t
      \transpose d g,  \zlodzejeKch
     }
-    \new Staff \transpose d g, \zlodzejeK
+    \new Staff \zlodzejeKG
 
   >>
   \layout{ }
@@ -165,7 +165,7 @@
       \set chordChanges = ##t
       \transpose d g, \zbojniciKch
     }
-    \new Staff \transpose d g, \zbojniciK
+    \new Staff \zbojniciKG
 
   >>
   \layout{ }
@@ -185,7 +185,7 @@
       \set chordChanges = ##t
       \transpose d g, \zbojniciDohraKch
     }
-    \new Staff \transpose d g, \zbojniciDohraK
+    \new Staff \zbojniciDohraKG
 
   >>
   \layout{ }
@@ -243,7 +243,7 @@
     }
 
     
-    \new Staff \transpose d g, \kebychK
+    \new Staff  \kebychKG
 
 
 
@@ -252,11 +252,11 @@
 }
 
 \markup {
-  Kebych ja vedev D dur (\bold{23.} spev)
+  Kebych ja vedev A dur (\bold{23.} spev)
 }
 \score {
   <<
-    \new Staff \kebych
+    \new Staff \transpose d a, \kebychbO 
     
                            \new Lyrics {
       \kebychC
@@ -268,35 +268,37 @@
     
     \new ChordNames {
       \set chordChanges = ##t
-      \kebychKch
+      \transpose d a, \kebychKchbO
     }
-    \new Staff \kebychK
+    \new Staff \kebychKA
 
   >>
   \layout{ }
 }
 
 \markup {
-  Kebych ja vedev D dur (\bold{24.} medzihra a konec)
+  Kebych ja vedev A dur (\bold{24.} medzihra a konec)
 }
 \score {
   <<
-    \new Staff \kebychDohra
+    \new Staff \transpose d a, \kebychDohra
     
 
     
     \new ChordNames {
       \set chordChanges = ##t
-      \kebychDohraKch
+      \transpose d a \kebychDohraKch
     }
-    \new Staff \kebychDohraK
+    \new Staff \kebychDohraKA
 
   >>
   \layout{ }
 }
 
+
+
 \markup {
-  V Kochanovcách zvony zvoňá (\bold {25.} \italic {konec}) 
+  V Kochanovcách zvony zvoňá (\bold {25.} \italic {konec})
 }
 \score {
   <<

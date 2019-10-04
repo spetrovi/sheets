@@ -166,8 +166,8 @@ sunkoDohraK = {
 
 <fis d> <fis d> <fis d> <fis d>
 \bar "||"
-<fis d>-"dohra" <fis d> <fis d> <fis d>
-<fis d>4-"spomalenie"  <e a,>
+<fis d>-\markup{\italic dohra} <fis d> <fis d> <fis d>
+<fis d>4-\markup{\italic spomalenie}  <e a,>
 <fis d>4  <fis d>8\upbow  <fis d>\upbow
 <fis d>2
 }
@@ -216,6 +216,25 @@ zlodzejeK = {
 <e b>-. <e b>-. <e b>-. <e b>-.
 <e a>-. <e a>-. <e a>-. <e a>-.
 <d a'>-. <d a'>-. <d a'>-. <d a'>-.
+}
+}
+
+
+zlodzejeKG = {
+  \clef violin
+  \key d \major
+  \time 2/4
+\relative{
+<g' b>8-.  <g b>-.  <g b>-. <g b>-.
+<g b>8-.  <g b>-.  <g b>-. <g b>-.
+<g b>8-.  <g b>-.  <g b>-. <g b>-.
+<g b>8-.  <g b>-.  <g b>-. <g b>-.
+
+<e a>-. <e a>-. <e a>-. <e a>-.
+<e a>-. <e a>-. <e a>-. <e a>-.
+
+<d a'> -. <d a'>-. <d a'>-. <d a'>-.
+<g b>8-.  <g b>-.  <g b>-. <g b>-.
 }
 }
 
@@ -269,6 +288,7 @@ d d d d
 e e e e
 a a a a 
 a a a a
+a a a a
 e e a a
 d d d d
 }
@@ -301,16 +321,72 @@ zbojniciDohraK = {
 <e a> <e a> <e a> <e a>
 <e a> <e a> <e a> <e a>
 <e a> <e a> <e a> <e a>
+
 <e b'> <e b'> <e a> <e a> 
 <d a'> <d a'> <d a'> <d a'>
 \bar "||"
-<fis d>-"dohra" <fis d> <fis d> <fis d>
-<fis d>4-"spomalenie"  <e a,>
+<fis d>-\markup{\italic dohra} <fis d> <fis d> <fis d>
+<fis d>4-\markup{\italic spomalenie}  <e a,>
 <fis d>4  <fis d>8\upbow  <fis d>\upbow
 <fis d>2
 }
 }
 
+
+
+zbojniciKG = {
+  \clef violin
+  \key g \major
+  \time 2/4
+\relative{
+<g' b>8 <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+
+
+<e a> <e a> <e a> <e a>
+
+<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> <d a'> <d a'>
+<e a> <e a> <d a'> <d a'>
+
+<g b> <g b> <g b> <g b>
+
+
+
+}
+}
+
+
+zbojniciDohraKG = {
+  \clef violin
+  \key g \major
+  \time 2/4
+\relative{
+<g' b>8 <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+
+
+<e a> <e a> <e a> <e a>
+<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> <d a'> <d a'>
+<e a> <e a> <d a'> <d a'>
+
+<g b> <g b> <g b> <g b>
+
+
+\bar "||"
+<g b>-\markup{\italic dohra} <g b> <g b> <g b>
+<g b>4-\markup{\italic spomalenie}  <d a'>
+<g b>4 <g b>8\upbow  <g b>\upbow
+<g b>2
+}
+}
 
 
 zbojniciDohraKch = \chordmode {
@@ -320,6 +396,7 @@ d d d d
 d d d d
 e e e e
 a a a a 
+a a a a
 a a a a
 e e a a
 d d d d
@@ -338,34 +415,88 @@ kebych= {
   
 
 \relative{
+\repeat volta 4{
+d''8 d4 fis8 | e d4.| 
+fis8 fis4 a8 | g fis4.|
+e4 d | cis4 b | a2|
+a'4 g | fis e  |
+}
+\alternative {
+  { d2 | }
+  { d4 dis | }
+}
+
+}
+}
+
+kebychbO= {
+  \clef violin
+  \key d \major
+  \time 2/4
+  
+
+\relative{
 \repeat volta 2{
 d''8 d4 fis8 | e d4.| 
 fis8 fis4 a8 | g fis4.|
 e4 d | cis4 b | a2|
-a'4 g | fis e  | d2
-}}
+a'4 g | fis e  | d2 |
 }
-
+}
+}
 
 kebychK = {
   \clef violin
   \key d \major
   \time 2/4
 \relative{
+\repeat volta 4{
 <d' a'>8  <d a'>  <d a'> <d a'>
 <d a'>  <d a'> <d a'> <d a'>
 <d a'>  <d a'> <d a'> <d a'>
 <d a'>  <d a'> <d a'>  <d a'>
 <e a> <e a> <e a> <e a>
 <e a> <e a> <e a> <e a>
-<d a'>  <d a'> <d a'>  <d a'>
 <e b'> <e b'> <e b'> <e b'>
 <e a> <e a> <e a> <e a>
-<d a'> <d a'> <d a'> <d a'>
-
-
+<e b'> <e b'> <e a> <e a>
+}
+\alternative{
+{<d a'> <d a'> <d a'> <d a'>}
+{<d a'> <d a'> <e b> <e b>}
 }
 }
+}
+
+
+
+kebychKG = {
+  \clef violin
+  \key g \major
+  \time 2/4
+\relative{
+\repeat volta 4{
+<g' b>8 <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+
+<d a'>  <d a'> <d a'> <d a'>
+<e a> <e a> <e a> <e a>
+<d a'>  <d a'> <d a'> <d a'>
+
+<d a'>  <d a'> <d a'> <d a'>
+<e a> <e a> <d a'> <d a'>
+
+}
+
+\alternative{
+{<g b> <g b> <g b> <g b>}
+{<g b> <g b> <e b'> <e b'>}
+}
+}
+}
+
 
 
 kebychKch = \chordmode {
@@ -374,11 +505,58 @@ d d d d
 d d d d
 d d d d
 a a a a
-a a a a
+e e e e
 a a a a
 a a a a
 e e a a
 d d d d
+d d b b 
+}
+
+kebychKchbO = \chordmode {
+d8 d d d
+d d d d
+d d d d
+d d d d
+a a a a
+e e e e
+a a a a
+a a a a
+e e a a
+d d d d
+}
+
+kebychKA = {
+  \clef violin
+  \key a \major
+  \time 2/4
+\relative{
+<e' a>8  <e a> <e a> <e a>
+<e a> <e a> <e a> <e a>
+<e a> <e a> <e a> <e a>
+<e a> <e a> <e a> <e a>
+<e b'> <e b'> <e b'> <e b'>
+<fis b> <fis b> <fis b> <fis b>
+<e b'> <e b'> <e b'> <e b'>
+<e b'> <e b'> <e b'> <e b'>
+<fis b> <fis b> <e b'> <e b'>
+<e a> <e a> <e a> <e a>
+}
+}
+
+
+
+kebychKchA = \chordmode {
+a8 a a a
+a a a a
+a a a a
+a a a a
+e e e e
+b b b b
+e e e e
+e e e e
+b b e e
+a a a a
 }
 
 
@@ -391,7 +569,7 @@ kebychDohra= {
 
 \relative{
 \repeat volta 2{
-d''8 d4 fis8 | e d4.| 
+d''8^\markup { \italic {Veľmi rýchlo a živelne!}} d4 fis8 | e d4.| 
 fis8 fis4 a8 | g fis4.|
 e4 d | cis4 b | a2|
 a'4 g | fis e  | d2
@@ -411,16 +589,44 @@ kebychDohraK = {
 <d a'>  <d a'> <d a'>  <d a'>
 <e a> <e a> <e a> <e a>
 <e a> <e a> <e a> <e a>
-<e a> <e a> <e a> <e a>
+<e b'> <e b'> <e b'> <e b'>
 <e a> <e a> <e a> <e a>
 <e b'> <e b'> <e a> <e a>
 <d a'> <d a'> <d a'> <d a'>
-<d a'>-"dohra"  <d a'> <d a'> <d a'>
-<fis d>4-"spomalenie"  <e a>
+
+<d a'>-\markup{\italic dohra}  <d a'> <d a'> <d a'>
+<fis d>4-\markup{\italic spomalenie}  <e a>
 <d a'> 4  <d a'> 8\upbow  <d a'> \upbow
 <d a'> 2
 }
 }
+
+kebychDohraKA = {
+  \clef violin
+  \key a \major
+  \time 2/4
+\relative{
+\repeat volta 2 {
+<e' a e'>8-\markup{\italic Veľmi rýchlo a živelne!}  <e a e'> <e a e'> <e a e'>
+<e a e'> <e a e'> <e a e'> <e a e'>
+<e a e'> <e a e'> <e a e'> <e a e'>
+<e a e'> <e a e'> <e a e'> <e a e'>
+<e b' e> <e b' e> <e b' e> <e b' e>
+<fis b> <fis b> <fis b> <fis b>
+<e b' e> <e b' e> <e b' e> <e b' e>
+<e b' e> <e b' e> <e b' e> <e b' e>
+<fis b> <fis b> <e b'> <e b'>
+<e a e'> <e a e'> <e a e'> <e a e'>
+}
+
+<e a e'>-\markup{\italic dohra} <e a e'> <e a e'> <e a e'>
+<fis b>4-\markup{\italic spomalenie}  <e b' e>
+<e a e'> 4  <e a e'>8\upbow  <e a e'> \upbow
+<e a e'> 2
+
+}
+}
+
 
 
 kebychDohraKch = \chordmode {
@@ -429,7 +635,7 @@ d d d d
 d d d d
 d d d d
 a a a a
-a a a a
+e e e e
 a a a a
 a a a a
 e e a a
@@ -477,10 +683,36 @@ kedmaK = {
 <d a'> <d a'> <d a'> <d a'>
 
 <fis d> <fis d> <fis d> <fis d>
-<e a>4-"sekane"-.  <e a>-.
+<e a>4-\markup{\italic sekane}-.  <e a>-.
 
 }
 }
+
+kedmaKG = {
+  \clef violin
+  \key g \major
+  \time 2/4
+\relative{
+\repeat volta 2 {
+<g' b>8 <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+<g b> <g b> <g b> <g b>
+
+<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> <d a'> <d a'>
+<e a> <e a>  <d a'> <d a'>
+<g b> <g b> <g b> <g b>
+
+}
+<g b>-\markup{\italic prechod} <g b> <g b> <g b>
+
+<g b>4-\markup{\italic sekane}-.  <d a'>-.
+}
+}
+
 
 kedmaKch = \chordmode {
 d8 d d d
@@ -493,8 +725,8 @@ a a a a
 a a a a
 e e a a
 d d d d 
-d d d d
-a2 a2
+d d 
+d2 a2
 }
 
 
