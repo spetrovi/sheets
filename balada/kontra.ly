@@ -9,12 +9,6 @@
 
     V Kochanovcách zvony zvoňá (\bold {1., 2.})
 }
-\score {
-  <<
-    \new Staff {R2*20}
-  >>
-  \layout{ }
-}
 
 
 
@@ -70,12 +64,6 @@
 \markup {
   V Kochanovcách zvony zvoňá (\bold {8., 9.})
 }
-\score {
-  <<
-    \new Staff {R2*20}
-  >>
-  \layout{ }
-}
 
 
 
@@ -125,7 +113,7 @@
 }
 
 \markup {
-  Kykulský zbojníci (\bold{14.}a capella spev, \bold{15.}2. spev, \bold{16.} medzihra, \bold{17.}spev)
+  Kykulský zbojníci (\bold{14.} spev, \bold{15.}2. spev, \bold{16.} medzihra, \bold{17.}spev)
 }
 \score {
   <<
@@ -174,12 +162,6 @@
 \markup {
   V Kochanovcách zvony zvoňá (\bold{19.}, \bold{20.})
 }
-\score {
-  <<
-    \new Staff {R2*20}
-  >>
-  \layout{ }
-}
 
 
 
@@ -187,7 +169,7 @@
 
 
 \markup {
-  Kebych ja vedev (\bold{21.} a capella, \bold{22.} medzihra)
+  Kebych ja vedev (\bold{21.} spev, \bold{22.} medzihra)
 }
 \score {
   <<    
@@ -258,9 +240,4 @@
 \markup {
   V Kochanovcách zvony zvoňá (\bold {25.} \italic {konec}) 
 }
-\score {
-  <<
-    \new Staff {R2*20}
-  >>
-  \layout{ }
-}
+

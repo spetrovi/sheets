@@ -144,7 +144,7 @@
 }
 
 \markup {
-  Kykulský zbojníci (\bold{14.}a capella spev, \bold{15.}2. spev, \bold{16.} medzihra, \bold{17.}spev)
+  Kykulský zbojníci (\bold{14.} spev, \bold{15.}2. spev, \bold{16.} medzihra, \bold{17.}spev)
 }
 \score {
   <<
@@ -218,7 +218,7 @@
 
 
 \markup {
-  Kebych ja vedev (\bold{21.} a capella, \bold{22.} medzihra)
+  Kebych ja vedev (\bold{21.} spev, \bold{22.} medzihra)
 }
 \score {
   <<

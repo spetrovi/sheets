@@ -140,7 +140,7 @@ sunkoDohra= {
   \time 2/4
 \relative d''{
 d8 fis4 fis8 | g fis e4
-| e8 e4 d8| g fis4. | e2|
+| e8 e4 d8| g fis4. | e2 \break |
 e8 e4 d8 |  e d e4 | 
 a8 a4 g8 |fis4 e | d2 \bar "||"
 
@@ -195,11 +195,14 @@ zlodzeje= {
   \key d \major
   \time 2/4
 \relative{
+
 d''4 8 8| d e fis4|
 d fis8 fis| e cis a4|
+\repeat volta 2 {
 g4 b8 b| b cis d4| 
 a4 e'8 e|  
-e cis a4|
+e cis a4^\markup{ \italic sek}|
+}
 }
 }
 
@@ -299,7 +302,7 @@ zbojniciDohra= {
   \time 2/4
 \relative{
 d''8 fis4 fis8 | g8 fis e4|
-e8 e4 d8 | g4 fis | e2 |
+e8 e4 d8 | g4 fis | e2 \break |
 e8 e4 d8 | e d e4|
 a8 a4 g8 | fis4 e | d2 |
 
@@ -658,7 +661,7 @@ kedma= {
 \repeat volta 2 {
 d''8 e fis gis | a a4.|
 fis8 e4 d8 | cis4 d| e2|
-e8 fis gis a| b a4.|
+e8 fis gis a \break | b a4.|
 b8 a4 gis8 |fis4 e | d2 
 }
 

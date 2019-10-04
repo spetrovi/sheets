@@ -91,7 +91,7 @@
 
 
 \markup {
-  Zbojníci zlodzeje (\bold{12.}spev, \bold{13.}spev)
+  Zbojníci zlodzeje (\bold{12.}spev, \bold{13.}spev a sek)
 }
 \score {
   <<
@@ -107,9 +107,9 @@
   >>
   \layout{ }
 }
-
+\pageBreak
 \markup {
-  Kykulský zbojníci (\bold{14.}a capella spev, \bold{15.}2. spev, \bold{16.} medzihra, \bold{17.}spev)
+  Kykulský zbojníci (\bold{14.} spev, \bold{15.}2. spev, \bold{16.} medzihra, \bold{17.}spev)
 }
 \score {
   <<
@@ -164,7 +164,7 @@
 
 
 \markup {
-  Kebych ja vedev (\bold{21.} a capella, \bold{22.} medzihra)
+  Kebych ja vedev (\bold{21.} spev, \bold{22.} medzihra)
 }
 \score {
   <<
@@ -185,11 +185,11 @@
 }
 
 \markup {
-  Kebych ja vedev D dur (\bold{23.} spev)
+  Kebych ja vedev A dur (\bold{23.} spev)
 }
 \score {
   <<
-    \new Staff \transpose d a, \kebych
+    \new Staff \transpose d a, \kebychbO 
     
                            \new Lyrics {
       \kebychC
@@ -204,11 +204,11 @@
 }
 
 \markup {
-  Kebych ja vedev D dur (\bold{24.} medzihra a konec)
+  Kebych ja vedev A dur (\bold{24.} medzihra a konec)
 }
 \score {
   <<
-    \new Staff  \kebychDohra
+    \new Staff \transpose d a, \kebychDohra
     
 
 
