@@ -232,12 +232,13 @@ zlodzejeKG = {
 <g b>8-.  <g b>-.  <g b>-. <g b>-.
 <g b>8-.  <g b>-.  <g b>-. <g b>-.
 <g b>8-.  <g b>-.  <g b>-. <g b>-.
-
+\repeat volta 2{
 <e a>-. <e a>-. <e a>-. <e a>-.
 <e a>-. <e a>-. <e a>-. <e a>-.
 
 <d a'> -. <d a'>-. <d a'>-. <d a'>-.
 <g b>8-.  <g b>-.  <g b>-. <g b>-.
+}
 }
 }
 
@@ -534,6 +535,7 @@ kebychKA = {
   \key a \major
   \time 2/4
 \relative{
+\repeat volta 2{
 <e' a>8  <e a> <e a> <e a>
 <e a> <e a> <e a> <e a>
 <e a> <e a> <e a> <e a>
@@ -544,6 +546,7 @@ kebychKA = {
 <e b'> <e b'> <e b'> <e b'>
 <fis b> <fis b> <e b'> <e b'>
 <e a> <e a> <e a> <e a>
+}
 }
 }
 

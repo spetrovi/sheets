@@ -169,7 +169,7 @@
 
 
 \markup {
-  Kebych ja vedev (\bold{21.} spev, \bold{22.} medzihra)
+  Kebych ja vedev (\bold{21.} a capella, \bold{22.} medzihra, \bold{23.} spev, \bold{24.} medzihra, \bold{25.} medzihra)
 }
 \score {
   <<    
@@ -197,7 +197,7 @@
 }
 
 \markup {
-  Kebych ja vedev A dur (\bold{23.} spev)
+  Kebych ja vedev A dur (\bold{26.} spev)
 }
 \score {
   <<
@@ -221,7 +221,7 @@
 }
 
 \markup {
-  Kebych ja vedev A dur (\bold{24.} medzihra a konec)
+  Kebych ja vedev A dur (\bold{27.} medzihra a konec)
 }
 \score {
   <<
@@ -238,6 +238,6 @@
 }
 
 \markup {
-  V Kochanovcách zvony zvoňá (\bold {25.} \italic {konec}) 
+  V Kochanovcách zvony zvoňá (\bold {28.} \italic {konec}) 
 }
 
