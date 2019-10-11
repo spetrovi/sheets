@@ -109,7 +109,7 @@
 }
 \pageBreak
 \markup {
-  Kykulský zbojníci (\bold{14.} spev, \bold{15.}2. spev, \bold{16.} medzihra, \bold{17.}spev)
+  Kykulský zbojníci (\bold{14.} spev, \bold{15.}medzihra, \bold{16.} spev, \bold{17.}medzihra, \bold{18.}spev, \bold{19.}medzihra)
 }
 \score {
   <<
@@ -134,7 +134,7 @@
 
 
 \markup {
-  Kykulský zbojníci (\bold{18.} medzihra + konec)
+  Kykulský zbojníci (\bold{20.} medzihra + konec)
 }
 \score {
   <<
@@ -149,7 +149,7 @@
 
 
 \markup {
-  V Kochanovcách zvony zvoňá (\bold{19.}, \bold{20.})
+  V Kochanovcách zvony zvoňá (\bold{21.}, \bold{22.})
 }
 \score {
   <<
@@ -164,7 +164,7 @@
 
 
 \markup {
-  Kebych ja vedev (\bold{21.} a capella, \bold{22.} medzihra, \bold{23.} spev, \bold{24.} medzihra, \bold{25.} medzihra)
+  Kebych ja vedev (\bold{23.} a capella, \bold{24.} medzihra, \bold{25.} spev, \bold{26.} medzihra + prechod)
 }
 \score {
   <<
@@ -185,7 +185,7 @@
 }
 
 \markup {
-  Kebych ja vedev A dur (\bold{26.} spev)
+  Kebych ja vedev A dur (\bold{27.} spev)
 }
 \score {
   <<
@@ -204,7 +204,7 @@
 }
 
 \markup {
-  Kebych ja vedev A dur (\bold{27.} medzihra a konec)
+  Kebych ja vedev A dur (\bold{28.} medzihra a konec)
 }
 \score {
   <<
@@ -217,7 +217,7 @@
 }
 
 \markup {
-  V Kochanovcách zvony zvoňá (\bold {28.} \italic {konec}) 
+  V Kochanovcách zvony zvoňá (\bold {29.} \italic {konec}) 
 }
 \score {
   <<

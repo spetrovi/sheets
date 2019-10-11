@@ -93,7 +93,7 @@ sunko= {
 \relative d''{
 d8 fis4 fis8 | g fis e4
 | e8 e4 d8| g fis4. | e2|
-e8 e4 d8 |  e d e4 | 
+e8^\markup{\italic pripoj spev}  e4 d8 |  e d e4 | 
 a8 a4 g8 |fis4 e | d2 |
 }
 }
@@ -108,8 +108,8 @@ sunkoK = {
 <fis d> <fis d> <fis d> <fis d>
 <fis d> <fis d> <fis d> <fis d>
 <fis d> <fis d> <fis d> <fis d>
-<e a,> <e a,> <e a,> <e a,>
-<e a,> <e a,> <e a,> <e a,>
+<e a,><e a,> <e a,> <e a,>
+<e a,> <e a,>^\markup{\italic pripoj spev}  <e a,> <e a,>
 <e a,> <e a,> <e a,> <e a,>
 <e a,> <e a,> <e a,> <e a,>
 
@@ -144,7 +144,7 @@ d8 fis4 fis8 | g fis e4
 e8 e4 d8 |  e d e4 | 
 a8 a4 g8 |fis4 e | d2 \bar "||"
 
-a8^\markup { \italic dohra } b cis d | e4^\markup { \italic spomalenie } b4 | a a8\upbow a\upbow | a2
+a8^\markup { \italic dohra } b cis d | fis4^\markup { \italic spomalenie } e4 | d d8\upbow d\upbow | d2
 }
 }
 
@@ -261,7 +261,7 @@ zbojnici= {
 \relative{
 d''8 fis4 fis8 | g8 fis e4|
 e8 e4 d8 | g4 fis | e2 |
-e8 e4 d8 | e d e4|
+e8^\markup{\italic pripoj spev} e4 d8 | e d e4|
 a8 a4 g8 | fis4 e | d2 |
 }
 }
@@ -351,7 +351,7 @@ zbojniciKG = {
 
 <e a> <e a> <e a> <e a>
 
-<d a'>  <d a'> <d a'> <d a'>
+<d a'>  <d a'> ^\markup{\italic pripoj spev} <d a'> <d a'>
 <d a'>  <d a'> <d a'> <d a'>
 <d a'>  <d a'> <d a'> <d a'>
 <e a> <e a> <d a'> <d a'>
@@ -580,7 +580,7 @@ fis8 fis4 a8 | g fis4.|
 e4 d | cis4 b | a2|
 a'4 g | fis e  | d2
 }
-a8^\markup { \italic dohra } b cis d | e4^\markup { \italic spomalenie } gis4 | a a8\upbow a\upbow | a2}
+d8^\markup { \italic dohra } e fis g | a4^\markup { \italic spomalenie } cis4 | d d8\upbow d\upbow | d2}
 }
 
 
@@ -662,13 +662,13 @@ kedma= {
 
 \relative{
 \repeat volta 2 {
-d''8 e fis gis | a a4.|
-fis8 e4 d8 | cis4 d| e2|
-e8 fis gis a \break | b a4.|
+d''8 e fis gis | a gis4.|
+fis8( e4) d8 | cis4 d| e2|
+e8^\markup{\italic pripoj spev} fis gis a \break | b a4.|
 b8 a4 gis8 |fis4 e | d2 
 }
 
-a8 b cis d | e4^\markup{ \italic sekane }-. b4-.
+a8 b cis d | fis4^\markup{ \italic sekane }-. e4-.
 }
 }
 
@@ -682,7 +682,7 @@ kedmaK = {
 <d a'>  <d a'> <d a'> <d a'>
 <d a'>  <d a'> <d a'>  <d a'>
 <e a> <e a> <e a> <e a>
-<e a> <e a> <e a> <e a>
+<e a>^\markup{\italic pripoj spev}  <e a> <e a> <e a>
 <e a> <e a> <e a> <e a>
 <e a> <e a> <e a> <e a>
 <e b> <e b> <e a> <e a>
@@ -706,7 +706,7 @@ kedmaKG = {
 <g b> <g b> <g b> <g b>
 
 <d a'>  <d a'> <d a'> <d a'>
-<d a'>  <d a'> <d a'> <d a'>
+<d a'>^\markup{\italic pripoj spev}   <d a'> <d a'> <d a'>
 <d a'>  <d a'> <d a'> <d a'>
 <d a'>  <d a'> <d a'> <d a'>
 <e a> <e a>  <d a'> <d a'>
